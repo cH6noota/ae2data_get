@@ -1,0 +1,14 @@
+import pandas as pd
+from temp import get_temp
+from writer import func_write
+import time
+
+while True:
+        #5sごとにデータを取得
+        temp,hum = get_temp()
+        func_write(temp,hum)
+        print("fin write!")
+        time.sleep(5)
+
+
+
